@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="form">
+    <h1 id="title">ML API</h1>
+    <h2>Input the data</h2>
+    <form action="{{ url_for('predict') }}" method="post">
+      <div class="field">
+        <label class="label" for="Follicle_R">Follicle_R:</label>
+        <input class="text-input" type="number" id="Follicle_R" name="Follicle_R" placeholder="Enter Follicle R No." required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Follicle_L">Follicle_L:</label>
+        <input class="text-input" type="number" id="Follicle_L" name="Follicle_L" placeholder="Enter Follicle L No." required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Skin_darkening">Skin_darkening:</label>
+        <select class="select" id="Skin_darkening" name="Skin_darkening" required>
+          <option value="" disabled selected>Select Yes or No</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Hair_growth">Hair_growth:</label>
+        <select class="select" id="Hair_growth" name="Hair_growth" required>
+          <option value="" disabled selected>Select Yes or No</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Weight_gain">Weight_gain:</label>
+        <select class="select" id="Weight_gain" name="Weight_gain" required>
+          <option value="" disabled selected>Select Yes or No</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Cycle">Cycle:</label>
+        <input class="text-input" type="number" id="Cycle" name="Cycle" placeholder="Enter Cycle value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Fast_food">Fast_food:</label>
+        <input class="text-input" type="number" id="Fast_food" name="Fast_food" step="0.01" placeholder="Enter Fast Food value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Pimples">Pimples:</label>
+        <input class="text-input" type="number" id="Pimples" name="Pimples" placeholder="Enter Pimples value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="AMH">AMH:</label>
+        <input class="text-input" type="number" id="AMH" name="AMH" placeholder="Enter AMH value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Weight">Weight:</label>
+        <input class="text-input" type="number" id="Weight" name="Weight" step="0.01" placeholder="Enter Weight value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="BMI">BMI:</label>
+        <input class="text-input" type="number" id="BMI" name="BMI" step="0.01" placeholder="Enter BMI value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Hair_loss">Hair_loss:</label>
+        <select class="select" id="Hair_loss" name="Hair_loss" required>
+          <option value="" disabled selected>Select Yes or No</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Waist">Waist:</label>
+        <input class="text-input" type="number" id="Waist" name="Waist" placeholder="Enter Waist value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Hip">Hip:</label>
+        <input class="text-input" type="number" id="Hip" name="Hip" placeholder="Enter Hip value" required>
+      </div>
+
+      <div class="field">
+        <label class="label" for="Endometrium">Endometrium:</label>
+        <input class="text-input" type="number" id="Endometrium" name="Endometrium" step="0.01" placeholder="Enter Endometrium value" required>
+      </div>
+
+      <div class="field last">
+        <button class="button" type="submit">Predict</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

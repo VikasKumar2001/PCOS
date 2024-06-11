@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static', filename='button.css') }}">
+<title>Background Image Example</title>
+<style>
+    body {
+      
+        background-image: url('/static/background.jpg');
+        /* Specify background properties */
+        background-size: cover; /* Cover the entire viewport */
+        background-position: center; /* Center the image */
+        /* Optional: additional styles */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        height: 100vh; /* Set height to 100% of viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white; /* Set text color to white */
+        flex-direction: column; /* Arrange items in a column */
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; /* Arrange items in a column */
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 10px; /* Adjust spacing between text and button */
+    }
+
+    p {
+        margin: 0; /* Remove default margin */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <p style="font-size: 100px;">OVARIOUS</p>
+        <p style="font-size: 28px;">Join the Cysterhood!</p>
+        <a href="{{ url_for('predict_page') }}" class="button" role="button">Get Started</a>
+
+    </div>
+</body>
+</html>

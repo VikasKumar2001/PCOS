@@ -1,0 +1,64 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/static/background.jpg'); /* Replace 'path/to/your/image.jpg' with the path to your image */
+  background-size: cover; /* Cover ensures that the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.5); /* Added a semi-transparent black background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #fff; /* Changed label color to white for better visibility */
+}
+
+input,
+select {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333; /* Changed input text color */
+  background-color: #fff; /* Added white background color for input/select */
+}
+
+button {
+  padding: 10px;
+  margin-top: 15px;
+  background: #007bff; /* Changed button background color to match the heading */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3; /* Darkened button color on hover */
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff; /* Changed paragraph text color to white */
+}
